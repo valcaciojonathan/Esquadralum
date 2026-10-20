@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Painel de Monitoramento | Esquadralum</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="tela">
+
+    <header class="topo">
+      <img class="topo__icone" src="img/icone.png" alt="">
+      <img class="topo__logo" src="img/logo.png" alt="Esquadralum - Soluções em esquadrias">
+    </header>
+
+    <main class="conteudo">
+      <h1 class="titulo">Painel de Monitoramento</h1>
+      <p class="subtitulo">Acompanhe o resumo da produção e dos pedidos</p>
+
+      <section class="resumo" aria-label="Resumo">
+        <article class="card">
+          <div class="card__topo">
+            <span class="card__icone card__icone--azul">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5Zm0 2.3 6.6 3.7L12 11.7 5.4 8 12 4.3ZM5 9.7l6 3.4v6.6l-6-3.3V9.7Zm8 10v-6.6l6-3.4v6.7l-6 3.3Z"/></svg>
+            </span>
+            <span class="card__rotulo">Pedidos em produção</span>
+          </div>
+          <strong class="card__numero">12</strong>
+          <span class="selo selo--azul">Em andamento</span>
+        </article>
+
+        <article class="card">
+          <div class="card__topo">
+            <span class="card__icone card__icone--verde">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm-1.6 14.6-4-4 1.4-1.4 2.6 2.6 5.8-5.8 1.4 1.4-7.2 7.2Z"/></svg>
+            </span>
+            <span class="card__rotulo">Pedidos concluídos</span>
+          </div>
+          <strong class="card__numero">48</strong>
+          <span class="selo selo--verde">Este mês</span>
+        </article>
+
+        <article class="card">
+          <div class="card__topo">
+            <span class="card__icone card__icone--laranja">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm4.2 13.4-5.2-3.1V6h1.6v5.4l4.4 2.6-.8 1.4Z"/></svg>
+            </span>
+            <span class="card__rotulo">Pendentes</span>
+          </div>
+          <strong class="card__numero">7</strong>
+          <span class="selo selo--laranja">Aguardando</span>
+        </article>
+
+        <article class="card">
+          <div class="card__topo">
+            <span class="card__icone card__icone--roxo">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10h3.5v10H4Zm6.2 0V4h3.5v16h-3.5Zm6.3 0v-7H20v7h-3.5Z"/></svg>
+            </span>
+            <span class="card__rotulo">Total de peças</span>
+          </div>
+          <strong class="card__numero">235</strong>
+          <span class="selo selo--roxo">Este mês</span>
+        </article>
+      </section>
+
+      <section class="pedidos" aria-labelledby="titulo-pedidos">
+        <div class="pedidos__cabecalho">
+          <h2 id="titulo-pedidos">Últimos pedidos</h2>
+          <a href="#" class="pedidos__link">Ver todos &rarr;</a>
+        </div>
+
+        <div class="tabela-wrap">
+          <table class="tabela">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Cliente</th>
+                <th>Tipo</th>
+                <th>Medidas (L x A)</th>
+                <th>Quantidade</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>001</td><td>João Silva</td><td>Janela</td><td>1200 x 1000</td><td>2</td>
+                <td><span class="status status--producao">Em produção</span></td>
+              </tr>
+              <tr>
+                <td>002</td><td>Maria Souza</td><td>Porta</td><td>2100 x 2200</td><td>1</td>
+                <td><span class="status status--concluido">Concluído</span></td>
+              </tr>
+              <tr>
+                <td>003</td><td>Carlos Lima</td><td>Janela</td><td>1500 x 1200</td><td>3</td>
+                <td><span class="status status--pendente">Pendente</span></td>
+              </tr>
+              <tr>
+                <td>004</td><td>Ana Costa</td><td>Basculante</td><td>800 x 600</td><td>1</td>
+                <td><span class="status status--producao">Em produção</span></td>
+              </tr>
+              <tr>
+                <td>005</td><td>Pedro Alves</td><td>Porta</td><td>2000 x 2100</td><td>2</td>
+                <td><span class="status status--concluido">Concluído</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <img class="rodape__logo" src="img/logo-rodape.png" alt="Esquadralum - Soluções em esquadrias">
+      <a href="#" class="rodape__link">Suporte Técnico e Contato</a>
+    </footer>
+
+  </div>
+</body>
+</html>
